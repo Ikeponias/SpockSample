@@ -23,9 +23,6 @@ class SpockComponent1FactoryTest extends Specification {
     SpockComponent2Factory spockComponent2Factory
 
     @Mock
-    SpockComponent3Factory spockComponent3Factory
-
-    @Mock
     SpockComponent2 spockComponent2
 
     @Mock
@@ -48,7 +45,7 @@ class SpockComponent1FactoryTest extends Specification {
         spockComponent1Factory.getValueFromSpockComponent4(0)
 
         then:
-        verify(spockComponent2Factory, times(1)).create(any(Integer.class)) || true
+        verify(spockComponent2Factory, times(1)).create(any(Integer.class))
     }
 
     def "NullArgumentMethodCall - 呼び出し回数チェック失敗"() {

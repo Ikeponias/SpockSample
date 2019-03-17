@@ -12,14 +12,11 @@ class SpockComponent1FactoryTestSpockAlt extends Specification {
 
     SpockComponent2 spockComponent2
 
-    SpockComponent3 spockComponent3
-
     SpockComponent4 spockComponent4
 
     def setup() {
         spockComponent2Factory = Mock(SpockComponent2Factory.class)
         spockComponent2 = Mock(SpockComponent2.class)
-        spockComponent3 = Mock(SpockComponent3.class)
         spockComponent4 = Mock(SpockComponent4.class)
     }
 

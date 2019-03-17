@@ -18,14 +18,8 @@ class SpockComponent1FactoryTestAlt extends Specification {
     @Mock
     SpockComponent2Factory spockComponent2Factory
 
-    @Mock
-    SpockComponent3Factory spockComponent3Factory
-
     @Mock(answer = Answers.RETURNS_DEEP_STUBS)
     SpockComponent2 spockComponent2
-
-    @Mock
-    SpockComponent3 spockComponent3
 
     @Mock
     SpockComponent4 spockComponent4
